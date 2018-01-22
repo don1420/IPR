@@ -9,8 +9,6 @@ define(['jquery',
                 currentPageSize: ko.observable(6),                           //current count of products per page
                 pageIndex: ko.observable(0)                                  //current page of product list
             };
-            console.log(ReadSetData.records);
-
 
             return ReadSetData;
         });

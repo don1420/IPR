@@ -26,12 +26,17 @@ define(['jquery',
             //  ---------------------------------------------
             self.sidebarEl.html(sidebarTmpl);
 
-            console.log(self.records());
+            self.applyPriceFilter = function () {
+                this.filtredRecords = _.filter(self.records(), function(item){
+                    return item.price() < 40 || item.price() > 50;
+                });
+                //ReadSetData.currentPageSize(this.filtredRecords.length);
+                ReadSetData.pageIndex(0);
+                ReadSetData.records(self.filtredRecords); 
+            };
 
-            console.log(_.filter(self.records(), function(item){
+            self.applyPriceFilter();
 
-                return item.price() < 40 || item.price() > 50;
-            }));
         };
 
         return SidebarViewModel;
