@@ -35,7 +35,7 @@ define(['jquery',
                 ReadSetData.records(self.filtredRecords); 
             };
 
-            self.applyPriceFilter();
+            //self.applyPriceFilter();
 
         };
 

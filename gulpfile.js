@@ -6,11 +6,9 @@ var gulp 					= require('gulp'),
 		cssnano				= require('gulp-cssnano'),
 		rename				= require('gulp-rename'),
 		del 					= require('del'),
-		imagemin			= require('gulp-imagemin'),
-		pngquant 			= require('imagemin-pngquant')
 		cache 				= require('gulp-cache'),
 		autoprefixer 	= require('gulp-autoprefixer'),
-        sourcemaps 		= require('gulp-sourcemaps');
+    sourcemaps 		= require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
 	return gulp.src('app/scss/**/*.scss')
@@ -56,17 +54,6 @@ gulp.task('clean', function() {
 
 gulp.task('clear', function() {
 	return cache.clearAll();
-});
-
-gulp.task('img', function() {
-	return gulp.src('app/img/**/*')
-	.pipe(cache(imagemin({
-		interlaced: true,
-		progressive: true,
-		svgoPlugins: [{removeViewBox: false}],
-		une: [pngquant()]
-		})))
-	.pipe(gulp.dest('dist/img'));
 });
 
 //gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
