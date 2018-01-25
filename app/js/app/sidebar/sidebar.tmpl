@@ -4,9 +4,8 @@
 	<ol>
 		<li>
 			<div class="checkbox">
-				<label data-bind="click: sidebar.applyPriceFilter()" for="price-before-20" class="layered-nav-filter-label">
-				<!--<label  for="price-before-20" class="layered-nav-filter-label">-->
-				<input data-bind="checkedValue: $data, checked: sidebar.priceFilterChecked" class="checkbox" type="checkbox" value="before-20" id="price-before-20" onchange="">
+				<label for="price-before-20" class="layered-nav-filter-label">
+				<input data-bind="checkedValue: {minPrice: 0, maxPrice: 20}, checked: sidebar.priceFilterChecked" class="checkbox" type="checkbox" value="before-20" id="price-before-20" onchange="">
 					Before $20
 					<!--<span data-bind="text: sidebar.priceFilterChecked() ? 'True' : 'False'"></span>-->
 				</label>

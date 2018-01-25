@@ -1,11 +1,12 @@
 define(['jquery',
         'knockout',
         'underscore',
+        'app/core/get_product_list',
         'app/core/read_set_data',
         'text!app/sidebar/sidebar.tmpl'],
 
  
-        function($, ko, _, ReadSetData, sidebarTmpl) {
+        function($, ko, _, getProductList, ReadSetData, sidebarTmpl) {
  
         var SidebarViewModel = function(options) {
 
@@ -25,10 +26,10 @@ define(['jquery',
             //  Applying template
             //  ---------------------------------------------
             self.sidebarEl.html(sidebarTmpl);
+            self.priceFilterChecked = ko.observable(false);
 
-            self.applyPriceFilter = function () {
-                debugger;
-                //console.log('1', self.priceFilterChecked());
+            self.applyPriceFilter = ko.computed(function () {
+                //debugger;
                 if (self.priceFilterChecked()) {
                     self.filtredRecords = _.filter(self.records(), function (item) {
                         return item.price() < 40 || item.price() > 50;
@@ -36,15 +37,20 @@ define(['jquery',
                     //ReadSetData.currentPageSize(this.filtredRecords.length);
                     ReadSetData.pageIndex(0);
                     ReadSetData.records(self.filtredRecords);
-                    console.log('true', self.priceFilterChecked(), self.records());
+                    //console.log('true', self.priceFilterChecked(), self.records());
                 } else {
-                    //self.records = getProductList("/js/app/model/products.json");
-                    //ReadSetData.records = getProductList("/js/app/model/products.json");
-                    console.log('false', self.priceFilterChecked(), self.records());
+                    if (!self.recordsNotFiltred) {
+                       self.recordsNotFiltred = self.records();
+                    }
+                    if (self.recordsNotFiltred) {
+                        ReadSetData.pageIndex(0);
+                        ReadSetData.records(self.recordsNotFiltred);
+                    }
+                    //console.log('false', self.priceFilterChecked(), self.records());
                 }
-            };
+            });
 
-            self.priceFilterChecked = ko.observable(false);
+            
             //self.applyPriceFilter();
 
         };
