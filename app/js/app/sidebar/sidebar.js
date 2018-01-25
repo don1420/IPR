@@ -27,14 +27,24 @@ define(['jquery',
             self.sidebarEl.html(sidebarTmpl);
 
             self.applyPriceFilter = function () {
-                this.filtredRecords = _.filter(self.records(), function(item){
-                    return item.price() < 40 || item.price() > 50;
-                });
-                //ReadSetData.currentPageSize(this.filtredRecords.length);
-                ReadSetData.pageIndex(0);
-                ReadSetData.records(self.filtredRecords); 
+                debugger;
+                //console.log('1', self.priceFilterChecked());
+                if (self.priceFilterChecked()) {
+                    self.filtredRecords = _.filter(self.records(), function (item) {
+                        return item.price() < 40 || item.price() > 50;
+                    });
+                    //ReadSetData.currentPageSize(this.filtredRecords.length);
+                    ReadSetData.pageIndex(0);
+                    ReadSetData.records(self.filtredRecords);
+                    console.log('true', self.priceFilterChecked(), self.records());
+                } else {
+                    //self.records = getProductList("/js/app/model/products.json");
+                    //ReadSetData.records = getProductList("/js/app/model/products.json");
+                    console.log('false', self.priceFilterChecked(), self.records());
+                }
             };
 
+            self.priceFilterChecked = ko.observable(false);
             //self.applyPriceFilter();
 
         };

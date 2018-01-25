@@ -1,11 +1,14 @@
-<h4>Price</h4>
+<h4>Shopping Options</h4>
 <div>
+	<h4>Price</h4>
 	<ol>
 		<li>
 			<div class="checkbox">
-				<label for="price-before-20" class="layered-nav-filter-label">
-				<input data-bind="click: sidebar.applyPriceFilter()" class="checkbox" type="checkbox" value="before-20" id="price-before-20" onchange="">
+				<label data-bind="click: sidebar.applyPriceFilter()" for="price-before-20" class="layered-nav-filter-label">
+				<!--<label  for="price-before-20" class="layered-nav-filter-label">-->
+				<input data-bind="checkedValue: $data, checked: sidebar.priceFilterChecked" class="checkbox" type="checkbox" value="before-20" id="price-before-20" onchange="">
 					Before $20
+					<!--<span data-bind="text: sidebar.priceFilterChecked() ? 'True' : 'False'"></span>-->
 				</label>
 			</div>
 		</li>
@@ -19,7 +22,7 @@
 		</li>
 		<li>
 			<div class="checkbox">
-				<label for="price-200-300" class="layered-nav-filter-label">
+				<label for="price-30-50" class="layered-nav-filter-label">
 					<input class="checkbox" type="checkbox" value="30-50" id="price-30-50" onchange="">
 					$30-$50
 				</label>

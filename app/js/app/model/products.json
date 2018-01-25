@@ -53,7 +53,7 @@
         "label":"",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101blk-1_3j7a9529-2.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101blk-1_3j7a9529-2.jpg",
         "types":[
           "image",
           "small_image",
@@ -65,7 +65,7 @@
         "label":"",
         "position":"2",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101blk-2_3j7a9546-2.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101blk-2_3j7a9546-2.jpg",
         "types":[
 
         ]
@@ -75,7 +75,7 @@
         "label":"",
         "position":"3",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101blk-3_3j7a9553-2.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101blk-3_3j7a9553-2.jpg",
         "types":[
 
         ]
@@ -85,7 +85,7 @@
         "label":"red",
         "position":"4",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch.png",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch.png",
         "types":[
 
         ]
@@ -95,7 +95,7 @@
         "label":"",
         "position":"5",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101red-2_3j7a9585.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101red-2_3j7a9585.jpg",
         "types":[
 
         ]
@@ -105,7 +105,7 @@
         "label":"",
         "position":"6",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101red-3_3j7a9582.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101red-3_3j7a9582.jpg",
         "types":[
 
         ]
@@ -115,7 +115,7 @@
         "label":"",
         "position":"7",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101ryl-1_3j7a9592.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101ryl-1_3j7a9592.jpg",
         "types":[
 
         ]
@@ -125,7 +125,7 @@
         "label":"",
         "position":"8",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101ryl-2_3j7a9605.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101ryl-2_3j7a9605.jpg",
         "types":[
 
         ]
@@ -135,7 +135,7 @@
         "label":"",
         "position":"9",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101ryl-3_3j7a9598.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101ryl-3_3j7a9598.jpg",
         "types":[
 
         ]
@@ -145,7 +145,7 @@
         "label":"",
         "position":"10",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-1_3j7a9622.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-1_3j7a9622.jpg",
         "types":[
 
         ]
@@ -155,7 +155,7 @@
         "label":"",
         "position":"11",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-2_3j7a9606.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-2_3j7a9606.jpg",
         "types":[
 
         ]
@@ -165,7 +165,7 @@
         "label":"",
         "position":"12",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-3_3j7a9614.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-3_3j7a9614.jpg",
         "types":[
 
         ]
@@ -269,7 +269,7 @@
         "label":"swatch-red-l",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_5.png",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_5.png",
         "types":[
           "image",
           "small_image",
@@ -327,7 +327,7 @@
         "label":"royal_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_2.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_2.jpg",
         "types":[
           "image",
           "small_image",
@@ -385,7 +385,7 @@
         "label":"white_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/w\/h\/white_swatch_3.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/w\/h\/white_swatch_3.jpg",
         "types":[
           "image",
           "small_image",
@@ -491,7 +491,7 @@
         "label":"red_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_4.png",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_4.png",
         "types":[
           "image",
           "small_image",
@@ -549,7 +549,7 @@
         "label":"royal_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_1.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_1.jpg",
         "types":[
           "image",
           "small_image",
@@ -607,7 +607,7 @@
         "label":"white_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-1_3j7a9622_1.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap101wht-1_3j7a9622_1.jpg",
         "types":[
           "image",
           "small_image",
@@ -712,7 +712,7 @@
         "label":"red",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/e\/red_shirt-swatch_1.png",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/e\/red_shirt-swatch_1.png",
         "types":[
 
         ]
@@ -722,7 +722,7 @@
         "label":"red_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_1.png",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_1.png",
         "types":[
           "image",
           "small_image",
@@ -780,7 +780,7 @@
         "label":"royal_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_3.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_3.jpg",
         "types":[
           "image",
           "small_image",
@@ -838,7 +838,7 @@
         "label":"white_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/w\/h\/white_swatch_1.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/w\/h\/white_swatch_1.jpg",
         "types":[
           "image",
           "small_image",
@@ -942,7 +942,7 @@
         "label":"red_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_3.png",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_3.png",
         "types":[
           "image",
           "small_image",
@@ -1000,7 +1000,7 @@
         "label":"royal_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_4.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch_4.jpg",
         "types":[
           "image",
           "small_image",
@@ -1058,7 +1058,7 @@
         "label":"white_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/w\/h\/white_swatch.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/w\/h\/white_swatch.jpg",
         "types":[
           "image",
           "small_image",
@@ -1162,7 +1162,7 @@
         "label":"red_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_2.png",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/e\/red-swatch_2.png",
         "types":[
           "image",
           "small_image",
@@ -1220,7 +1220,7 @@
         "label":"medroyal_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/r\/o\/royal_swatch.jpg",
         "types":[
           "image",
           "small_image",
@@ -1326,7 +1326,7 @@
         "label":"",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111blk-1_3j7a9784.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111blk-1_3j7a9784.jpg",
         "types":[
           "image",
           "small_image",
@@ -1338,7 +1338,7 @@
         "label":"",
         "position":"2",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111blk-2_3j7a9801.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111blk-2_3j7a9801.jpg",
         "types":[
 
         ]
@@ -1348,7 +1348,7 @@
         "label":"",
         "position":"3",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111blk-3_3j7a9793.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111blk-3_3j7a9793.jpg",
         "types":[
 
         ]
@@ -1358,7 +1358,7 @@
         "label":"",
         "position":"4",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-1_3j7a9849.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-1_3j7a9849.jpg",
         "types":[
 
         ]
@@ -1368,7 +1368,7 @@
         "label":"",
         "position":"5",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-2_3j7a9868.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-2_3j7a9868.jpg",
         "types":[
 
         ]
@@ -1378,7 +1378,7 @@
         "label":"",
         "position":"6",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-3_3j7a9858.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-3_3j7a9858.jpg",
         "types":[
 
         ]
@@ -1388,7 +1388,7 @@
         "label":"",
         "position":"7",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111red-1_3j7a9762.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111red-1_3j7a9762.jpg",
         "types":[
 
         ]
@@ -1398,7 +1398,7 @@
         "label":"",
         "position":"8",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111red-2_3j7a9777.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111red-2_3j7a9777.jpg",
         "types":[
 
         ]
@@ -1408,7 +1408,7 @@
         "label":"",
         "position":"9",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111red-3_3j7a9769.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111red-3_3j7a9769.jpg",
         "types":[
 
         ]
@@ -1418,7 +1418,7 @@
         "label":"",
         "position":"10",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111gry-1_3j7a9714.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111gry-1_3j7a9714.jpg",
         "types":[
 
         ]
@@ -1428,7 +1428,7 @@
         "label":"",
         "position":"11",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111gry-2_3j7a9733.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111gry-2_3j7a9733.jpg",
         "types":[
 
         ]
@@ -1438,7 +1438,7 @@
         "label":"",
         "position":"12",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111gry-3_3j7a9727.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111gry-3_3j7a9727.jpg",
         "types":[
 
         ]
@@ -1543,7 +1543,7 @@
         "label":"blu_swatch",
         "position":"1",
         "exclude":"0",
-        "url":"http:\/\/arnoldpalmerapparel.stg.stores.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-1_3j7a9849_5.jpg",
+        "url":"http:\/\/arnoldpalmerapparel.stg.aws3.net\/media\/catalog\/product\/a\/p\/ap111blu-1_3j7a9849_5.jpg",
         "types":[
           "image",
           "small_image",
