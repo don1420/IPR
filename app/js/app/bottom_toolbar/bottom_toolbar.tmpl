@@ -1,23 +1,23 @@
-<nav>
-	<ul class="pagination">
-		<li data-bind="css: {'disabled': bottomToolbar.pageIndex() == 0}">
-			<a href="#" data-bind="click: bottomToolbar.moveFirstPage, enable: bottomToolbar.pageIndex() > 0">First</a>
-		</li>
-		<li data-bind="css: {'disabled': bottomToolbar.pageIndex() <= 0}">
-			<a href="#" data-bind="click: bottomToolbar.movePreviousPage">Previous</a>
-		</li>
+<ul class="pagination">
+    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() == 0}">
+        <a href="#" data-bind="click: bottomToolbar.moveFirstPage, enable: bottomToolbar.pageIndex() > 0">First</a>
+    </li>
+    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() <= 0}">
+        <a href="#" data-bind="click: bottomToolbar.movePreviousPage">Previous</a>
+    </li>
 
-		<!-- ko foreach: new Array(bottomToolbar.maxPageIndex() + 1) -->
-		<li data-bind="css: {'active': $index() == $root.bottomToolbar.pageIndex()}">
-			<a href="#" data-bind="text:$index() + 1, click:$root.bottomToolbar.moveSelectedPage.bind($data, $index()), attr: { 'href': '#page=' + ($index() + 1)}">0</a>
-		</li>
-		<!-- /ko -->
+    <!-- ko foreach: new Array(bottomToolbar.maxPageIndex() + 1) -->
+    <li data-bind="css: {'active': $index() == $root.bottomToolbar.pageIndex()}">
+        <a href="#"
+           data-bind="text:$index() + 1, click:$root.bottomToolbar.moveSelectedPage.bind($data, $index()), attr: { 'href': '#page=' + ($index() + 1)}">0</a>
+    </li>
+    <!-- /ko -->
 
-		<li data-bind="css: {'disabled': bottomToolbar.pageIndex() >= bottomToolbar.maxPageIndex()}">
-			<a href="#" data-bind="click: bottomToolbar.moveNextPage">Next</a>
-		</li>
-		<li data-bind="css: {'disabled': bottomToolbar.pageIndex() == bottomToolbar.maxPageIndex()}">
-			<a href="#" data-bind="click: bottomToolbar.moveLastPage, enable: bottomToolbar.pageIndex() < bottomToolbar.maxPageIndex()">Last</a>
-		</li>
-	</ul>
-</nav>
+    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() >= bottomToolbar.maxPageIndex()}">
+        <a href="#" data-bind="click: bottomToolbar.moveNextPage">Next</a>
+    </li>
+    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() == bottomToolbar.maxPageIndex()}">
+        <a href="#"
+           data-bind="click: bottomToolbar.moveLastPage, enable: bottomToolbar.pageIndex() < bottomToolbar.maxPageIndex()">Last</a>
+    </li>
+</ul>

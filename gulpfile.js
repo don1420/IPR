@@ -59,8 +59,8 @@ gulp.task('clear', function() {
 //gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
 gulp.task('watch', ['browser-sync', 'css-libs'], function () {
 	gulp.watch('app/scss/**/*.scss', ['sass']);
+    gulp.watch('app/js/**/*.scss', ['sass']);
     gulp.watch('app/js/**/*.tmpl', browserSync.reload);
-	//gulp.watch('app/libs/bootstrap-sass/assets/stylesheets/**/*.scss', ['css-libs', browserSync.reload]);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });

@@ -22,7 +22,6 @@ define(['jquery',
             });
             self.pageIndex = ReadSetData.pageIndex;                         //current page of product list
             self.priceFilter = ko.observableArray();                        //track the sidebar input checking
-            //self.recordsNotFiltred = ReadSetData.records();
 
             //  ---------------------------------------------
             //  Applying template

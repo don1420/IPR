@@ -25,7 +25,7 @@ define(['jquery',
                 //  ---------------------------------------------
                 //  Create ProductListViewModel
                 //  ---------------------------------------------
-                var productListEl = self.element.find('.product_list');         //keep a reference to the product_list block
+                var productListEl = self.element.find('#product_list');         //keep a reference to the product_list block
                 self.productList = new ProductListViewModel({
                     element: productListEl
                 });
@@ -33,7 +33,7 @@ define(['jquery',
                 //  ---------------------------------------------
                 //  Create TopToolbarViewModel
                 //  ---------------------------------------------
-                var topToolbarEl = self.element.find('.top_toolbar');           //keep a reference to the top_toolbar block
+                var topToolbarEl = self.element.find('#top_toolbar');           //keep a reference to the top_toolbar block
                 self.topToolbar = new TopToolbarViewModel({
                     topToolbarEl: topToolbarEl
                 });
@@ -41,7 +41,7 @@ define(['jquery',
                 //  ---------------------------------------------
                 //  Create BottomToolbarViewModel
                 //  ---------------------------------------------
-                var bottomToolbarEl = self.element.find('.bottom_toolbar');     //keep a reference to the bottom_toolbar block
+                var bottomToolbarEl = self.element.find('#bottom_toolbar');     //keep a reference to the bottom_toolbar block
                 self.bottomToolbar = new BottomToolbarViewModel({
                     bottomToolbarEl: bottomToolbarEl
                 });

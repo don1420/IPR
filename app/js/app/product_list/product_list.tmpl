@@ -1,8 +1,9 @@
-<section data-bind="foreach: productList.pagedList" class="product-list">
-    <div class="col-md-4">
+<div class="row">
+    <!-- ko foreach: productList.pagedList -->
+    <div class="col s1 m2 l4">
         <div>
             <div class="product-container">
-                <h3 data-bind="text: name"></h3>
+                <h5 data-bind="text: name"></h5>
                 <div class="img-container">
                     <img data-bind="attr: {src: img}" src="img/no-img.jpg" alt="">
                 </div>
@@ -11,4 +12,5 @@
             </div>
         </div>
     </div>
-</section>
+    <!-- /ko -->
+</div>

@@ -1,9 +1,9 @@
-.product-list .product-container {
+.product-container {
   height: 415px; }
-  .product-list .product-container .img-container {
+  .product-container .img-container {
     height: 295px;
     overflow: hidden; }
-    .product-list .product-container .img-container img {
+    .product-container .img-container img {
       width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

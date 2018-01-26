@@ -3,7 +3,6 @@ define(['jquery',
         'app/core/read_set_data',
         'text!app/top_toolbar/top_toolbar.tmpl'],
 
- 
         function($, ko, ReadSetData, topToolbarTmpl) {
  
         var TopToolbarViewModel = function(options) {
@@ -70,6 +69,13 @@ define(['jquery',
                     return a.price() > b.price() ? 1 : -1;
                 });
             };
+
+            //  ---------------------------------------------
+            //  Initialize the materialize select element
+            //  ---------------------------------------------
+            $(function() {
+                $('select').material_select();
+            });
 
             //  ---------------------------------------------
             //  Options for <select>
