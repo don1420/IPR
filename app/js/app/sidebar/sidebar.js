@@ -15,43 +15,55 @@ define(['jquery',
             //  ---------------------------------------------
             var self = this;                                                //save main context
             self.sidebarEl = options.sidebarEl;                             //keep a reference to the root element
-            self.records = ReadSetData.records;                             //get product list
+            self.records = ReadSetData.records();                             //get product list
             self.currentPageSize = ReadSetData.currentPageSize;             //current count of products per page
             self.recordCount = ko.computed(function() {                     //count of products
-                return self.records().length;
+                return self.records.length;
             });
             self.pageIndex = ReadSetData.pageIndex;                         //current page of product list
+            self.priceFilter = ko.observableArray();                        //track the sidebar input checking
+            //self.recordsNotFiltred = ReadSetData.records();
 
             //  ---------------------------------------------
             //  Applying template
             //  ---------------------------------------------
             self.sidebarEl.html(sidebarTmpl);
-            self.priceFilterChecked = ko.observable(false);
 
+            //  ---------------------------------------------
+            //  Applying price filter
+            //  ---------------------------------------------
             self.applyPriceFilter = ko.computed(function () {
-                //debugger;
-                if (self.priceFilterChecked()) {
-                    self.filtredRecords = _.filter(self.records(), function (item) {
-                        return item.price() < 40 || item.price() > 50;
+                if (self.priceFilter().length !== 0) {
+                    var minFilterValue,
+                        maxFilterValue;
+
+                    $.each(self.priceFilter(), function(){
+                        var min = Number(this.split('-')[0]),
+                            max = Number(this.split('-')[1]);
+
+                        if (!minFilterValue && !maxFilterValue) {
+                            minFilterValue = min;
+                            maxFilterValue = max;
+                        }
+                        if (minFilterValue > min) {
+                            minFilterValue = min;
+                        }
+                        if (maxFilterValue < max) {
+                            maxFilterValue = max;
+                        }
                     });
-                    //ReadSetData.currentPageSize(this.filtredRecords.length);
+
+                    var filtredRecords = _.filter(self.records, function (item) {
+                        return item.price() > minFilterValue && item.price() < maxFilterValue;
+                    });
+
                     ReadSetData.pageIndex(0);
-                    ReadSetData.records(self.filtredRecords);
-                    //console.log('true', self.priceFilterChecked(), self.records());
+                    ReadSetData.records(filtredRecords);
                 } else {
-                    if (!self.recordsNotFiltred) {
-                       self.recordsNotFiltred = self.records();
-                    }
-                    if (self.recordsNotFiltred) {
-                        ReadSetData.pageIndex(0);
-                        ReadSetData.records(self.recordsNotFiltred);
-                    }
-                    //console.log('false', self.priceFilterChecked(), self.records());
+                    ReadSetData.pageIndex(0);
+                    ReadSetData.records(self.records);
                 }
             });
-
-            
-            //self.applyPriceFilter();
 
         };
 
