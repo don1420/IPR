@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col l4">
+        <div class="limiter">
+            <div class="descr">
+                <p>Show</p>
+            </div>
+            <select data-bind="options: topToolbar.pageSizeOptions, value: topToolbar.currentPageSize"
+                class="page-size">
+            </select>
+            <div class="descr">
+                <p>per page</p>
+            </div>
+        </div>
+    </div>
+    <div class="col l4">
+        <div class="quantity">
+            <p>
+                Products
+                <span data-bind="text: topToolbar.getProductsCountsFrom()"></span>
+                to
+                <span data-bind="text: topToolbar.getProductsCountsTo()"></span>
+                of
+                <span data-bind="text: topToolbar.recordCount"></span> total
+            </p>
+        </div>
+    </div>
+    <div class="col l4">
+        <div class="sort-by">
+            <div class="descr">
+                <p>Sort By</p>
+            </div>
+            <select data-bind="options: topToolbar.choices, value: topToolbar.selectedChoice">
+            </select>
+        </div>
+    </div>
+</div>

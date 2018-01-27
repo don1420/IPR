@@ -1,0 +1,16 @@
+<div class="row">
+    <!-- ko foreach: productList.pagedList -->
+    <div class="col s1 m2 l4">
+        <div class="hoverable">
+            <div class="product-container">
+                <h5 data-bind="text: name"></h5>
+                <div class="img-container">
+                    <img data-bind="attr: {src: img}" src="img/no-img.jpg" alt="">
+                </div>
+                <p data-bind="text: description"></p>
+                <p data-bind="text: price"></p>
+            </div>
+        </div>
+    </div>
+    <!-- /ko -->
+</div>

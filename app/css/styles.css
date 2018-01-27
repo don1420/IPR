@@ -1,3 +1,9 @@
+.top-toolbar .limiter .descr {
+  display: inline-block; }
+
+.top-toolbar .quantity p {
+  text-align: center; }
+
 .product-container {
   height: 415px; }
   .product-container .img-container {
