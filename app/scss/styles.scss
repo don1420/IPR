@@ -2,6 +2,6 @@
 @import "mixins/flex";
 
 // Page blocks styles
-//@import "module/page-blocks/poroduct-list";
 @import "../js/view-model/top_toolbar/top_toolbar";
+@import "../js/view-model/sidebar/sidebar";
 @import "../js/view-model/product_list/product_list";

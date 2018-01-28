@@ -12,10 +12,10 @@ var gulp 					= require('gulp'),
 
 gulp.task('sass', function () {
 	return gulp.src('app/scss/**/*.scss')
-    .pipe(sourcemaps.init())
+  .pipe(sourcemaps.init())
 	.pipe(sass())
 	.pipe(autoprefixer(['last 2 versions'], {cascade: true}))
-    .pipe(sourcemaps.write(''))
+  .pipe(sourcemaps.write(''))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))
 });

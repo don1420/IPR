@@ -4,6 +4,9 @@
 .top-toolbar .quantity p {
   text-align: center; }
 
+.sidebar .filter-container {
+  padding: 15px; }
+
 .product-container {
   height: 415px; }
   .product-container .img-container {
