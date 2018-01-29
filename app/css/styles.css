@@ -9623,7 +9623,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .product-container {
   padding: 15px; }
   .product-container__item {
-    height: 440px; }
+    height: 480px;
+    text-align: center; }
   .product-container__title {
     height: 20px;
     text-align: center;
@@ -9636,6 +9637,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .product-container__img {
     width: 100%; }
   .product-container__descr {
-    height: 40px; }
+    height: 20px;
+    text-align: left; }
+  .product-container__price {
+    color: #2196f3;
+    text-align: center; }
+  .product-container__btn {
+    margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */

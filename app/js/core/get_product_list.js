@@ -17,7 +17,7 @@ define(['jquery',
                                 img: ko.computed(function(){
                                     return (this.images.length !== 0) ? this.images[0].url : "img/no-img.jpg";
                                 }, this),
-                                price: ko.observable(parseFloat(this.price).toFixed(2)),
+                                price: ko.observable('$' + parseFloat(this.price).toFixed(2)),
                                 description: ko.observable(this.short_description)
                             });
                         });

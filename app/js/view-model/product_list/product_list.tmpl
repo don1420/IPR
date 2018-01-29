@@ -4,11 +4,14 @@
         <div class="product-container item-container hoverable">
             <div class="product-container__item">
                 <h5 class="product-container__title" data-bind="text: name"></h5>
-                <div class="product-container__img-wrap">
-                    <img class="product-container__img" data-bind="attr: {src: img, alt: name}" src="img/no-img.jpg">
-                </div>
+                <a href="#">
+                    <div class="product-container__img-wrap">
+                        <img class="product-container__img" data-bind="attr: {src: img, alt: name}" src="img/no-img.jpg">
+                    </div>
+                </a>
                 <p class="product-container__descr" data-bind="text: description"></p>
                 <p class="product-container__price" data-bind="text: price"></p>
+                <a class="waves-effect waves-light btn product-container__btn">VIEW</a>
             </div>
         </div>
     </div>

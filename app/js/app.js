@@ -53,6 +53,10 @@ define(['jquery',
                 self.sidebar = new SidebarViewModel({
                     sidebarEl: sidebarEl
                 });
+
+                $(function () {
+                   $(".button-collapse").sideNav();
+                })
             };
 
         return MainViewModel;
