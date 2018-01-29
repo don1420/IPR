@@ -1,14 +1,14 @@
 <div class="row">
     <!-- ko foreach: productList.pagedList -->
-    <div class="col s1 m2 l4">
-        <div class="card hoverable">
-            <div class="product-container">
-                <h5 data-bind="text: name"></h5>
-                <div class="img-container">
-                    <img data-bind="attr: {src: img}" src="img/no-img.jpg" alt="">
+    <div class="col s12 m6 l4">
+        <div class="product-container item-container hoverable">
+            <div class="product-container__item">
+                <h5 class="product-container__title" data-bind="text: name"></h5>
+                <div class="product-container__img-wrap">
+                    <img class="product-container__img" data-bind="attr: {src: img, alt: name}" src="img/no-img.jpg">
                 </div>
-                <p data-bind="text: description"></p>
-                <p data-bind="text: price"></p>
+                <p class="product-container__descr" data-bind="text: description"></p>
+                <p class="product-container__price" data-bind="text: price"></p>
             </div>
         </div>
     </div>

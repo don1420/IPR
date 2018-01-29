@@ -5,8 +5,33 @@
 // ==========================================================================
 //Styles
 // ==========================================================================
-.sidebar {
-	.filter-container {
-		padding: 15px;
-	}
+.filter-container {
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__content {
+    //padding: 0 15px;
+  }
+
+  &__section-title {
+    background-color: $timepicker-clock-plate-bg;
+    border-bottom: 1px solid $collapsible-border-color;
+    margin: 0;
+    padding: $indent-base;
+  }
+
+  &__items-wrapper {
+    padding: $indent-base;
+  }
+
+  &__item {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

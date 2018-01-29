@@ -69,7 +69,8 @@ select {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    border-bottom: $input-border;
+    border: $input-border;
+    border-radius: 2px;
     outline: none;
     height: $input-height;
     line-height: $input-height;
@@ -77,6 +78,7 @@ select {
     font-size: $input-font-size;
     margin: $input-margin;
     padding: 0;
+    padding-left: $indent-base;
     display: block;
     user-select:none;
   }

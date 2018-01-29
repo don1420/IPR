@@ -1,4 +1,8 @@
-//Mixins
+// Vendor Files
+@import "../libs/materialize-AMD-fix/sass/materialize";
+@import "../fonts/font-awesome-4.7.0/css/font-awesome";
+
+// Mixins
 @import "mixins/flex";
 
 // Page blocks styles

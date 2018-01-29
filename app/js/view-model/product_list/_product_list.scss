@@ -1,12 +1,36 @@
-.product-container {
-  height: 415px;
+// ==========================================================================
+//Variables
+// ==========================================================================
 
-  .img-container {
+// ==========================================================================
+//Styles
+// ==========================================================================
+
+.product-container {
+  padding: $indent-base;
+
+  &__item {
+    height: 440px;
+  }
+
+  &__title {
+    height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 $indent-base 0;
+    overflow: hidden;
+  }
+
+  &__img-wrap {
     height: 295px;
     overflow: hidden;
+  }
 
-    img {
-      width: 100%;
-    }
+  &__img {
+    width: 100%;
+  }
+
+  &__descr {
+    height: 40px;
   }
 }

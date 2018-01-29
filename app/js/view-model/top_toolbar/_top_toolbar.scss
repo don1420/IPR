@@ -1,17 +1,35 @@
+// ==========================================================================
+//Variables
+// ==========================================================================
+
+// ==========================================================================
+//Styles
+// ==========================================================================
 .top-toolbar {
-	.limiter {
-		.descr {
-			display: inline-block;
-		}
+  &__limiter {
 
-		// .page-size {
-		// 	//display: inline-block;
-		// }
-	}
+  }
 
-	.quantity {
-		p {
-			text-align: center;
-		}
-	}
+  &__descr {
+    display: inline-block;
+  }
+
+  div.top-toolbar__limiter-page-size {
+    display: inline-block;
+    margin: 0 $indent-base * 2 0 $indent-base;
+    width: 50px;
+  }
+
+  &__quantity-content {
+    text-align: center;
+  }
+
+  &__sort-wrapper {
+    text-align: right;
+  }
+
+  div.top-toolbar__sort-by {
+    @extend div.top-toolbar__limiter-page-size;
+    width: 100px;
+  }
 }

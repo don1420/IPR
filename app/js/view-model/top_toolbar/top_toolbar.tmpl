@@ -1,20 +1,19 @@
 <div class="row">
-    <div class="col l4">
-        <div class="limiter">
-            <div class="descr">
+    <div class="col m4 l4">
+        <div class="top-toolbar__limiter">
+            <div class="top-toolbar__descr">
                 <p>Show</p>
             </div>
-            <select data-bind="options: topToolbar.pageSizeOptions, value: topToolbar.currentPageSize"
-                class="page-size">
+            <select class="top-toolbar__limiter-page-size" data-bind="options: topToolbar.pageSizeOptions, value: topToolbar.currentPageSize">
             </select>
-            <div class="descr">
+            <div class="top-toolbar__descr">
                 <p>per page</p>
             </div>
         </div>
     </div>
-    <div class="col l4">
-        <div class="quantity">
-            <p>
+    <div class="col m4 l4">
+        <div class="top-toolbar__quantity">
+            <p class="top-toolbar__quantity-content">
                 Products
                 <span data-bind="text: topToolbar.getProductsCountsFrom()"></span>
                 to
@@ -24,12 +23,12 @@
             </p>
         </div>
     </div>
-    <div class="col l4">
-        <div class="sort-by">
-            <div class="descr">
+    <div class="col m4 l4">
+        <div class="top-toolbar__sort-wrapper">
+            <div class="top-toolbar__descr">
                 <p>Sort By</p>
             </div>
-            <select data-bind="options: topToolbar.choices, value: topToolbar.selectedChoice">
+            <select class="top-toolbar__sort-by" data-bind="options: topToolbar.choices, value: topToolbar.selectedChoice">
             </select>
         </div>
     </div>

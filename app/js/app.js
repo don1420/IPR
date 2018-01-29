@@ -49,7 +49,7 @@ define(['jquery',
                 //  ---------------------------------------------
                 //  Create BottomToolbarViewModel
                 //  ---------------------------------------------
-                var sidebarEl = self.element.find('.sidebar');     //keep a reference to the bottom_toolbar block
+                var sidebarEl = self.element.find('#sidebar_filter');     //keep a reference to the bottom_toolbar block
                 self.sidebar = new SidebarViewModel({
                     sidebarEl: sidebarEl
                 });

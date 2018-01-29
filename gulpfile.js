@@ -1,22 +1,30 @@
-var gulp 					= require('gulp'),
-		sass 					= require('gulp-sass'),
-		browserSync 	= require('browser-sync'),
-		concat 				= require('gulp-concat'),
-		uglify				= require('gulp-uglifyjs'),
-		cssnano				= require('gulp-cssnano'),
-		rename				= require('gulp-rename'),
-		del 					= require('del'),
-		cache 				= require('gulp-cache'),
-		autoprefixer 	= require('gulp-autoprefixer'),
+var gulp 			= require('gulp'),
+	sass 			= require('gulp-sass'),
+	browserSync 	= require('browser-sync'),
+	concat 			= require('gulp-concat'),
+	uglify			= require('gulp-uglifyjs'),
+	cssnano			= require('gulp-cssnano'),
+	rename			= require('gulp-rename'),
+	del 			= require('del'),
+	cache			= require('gulp-cache'),
+	autoprefixer 	= require('gulp-autoprefixer'),
     sourcemaps 		= require('gulp-sourcemaps');
 
+var paths = {
+    scss: ['app/scss/**/*.scss'],
+    vendorScss: ['app/libs/materialize-AMD-fix/sass/**/*.scss'],
+    css: 'app/css'
+};
+
 gulp.task('sass', function () {
-	return gulp.src('app/scss/**/*.scss')
-  .pipe(sourcemaps.init())
-	.pipe(sass())
-	.pipe(autoprefixer(['last 2 versions'], {cascade: true}))
-  .pipe(sourcemaps.write(''))
-	.pipe(gulp.dest('app/css'))
+	return gulp.src(paths.scss)
+	.pipe(sourcemaps.init())
+	.pipe(sass({includePaths: paths.vendorScss}).on('error', sass.logError))
+	.pipe(autoprefixer({
+        browsers: ['last 2 versions']
+    }))
+  	.pipe(sourcemaps.write(''))
+	.pipe(gulp.dest(paths.css))
 	.pipe(browserSync.reload({stream: true}))
 });
 
@@ -32,12 +40,12 @@ gulp.task('sass', function () {
 		.pipe(gulp.dest('app/js'));
 });*/
 
-gulp.task('css-libs', ['sass'], function () {
-	return gulp.src('app/css/libs.css')
-	.pipe(cssnano())
-	.pipe(rename({suffix : '.min'}))
-	.pipe(gulp.dest('app/css/'));
-});
+// gulp.task('css-libs', ['sass'], function () {
+// 	return gulp.src('app/css/libs.css')
+// 	.pipe(cssnano())
+// 	.pipe(rename({suffix : '.min'}))
+// 	.pipe(gulp.dest('app/css/'));
+// });
 
 gulp.task('browser-sync', function () {
 	browserSync({
@@ -57,9 +65,11 @@ gulp.task('clear', function() {
 });
 
 //gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
-gulp.task('watch', ['browser-sync', 'css-libs'], function () {
-	gulp.watch('app/scss/**/*.scss', ['sass']);
+gulp.task('watch', ['browser-sync', 'sass'], function () {
+	gulp.watch(paths.scss, ['sass']);
+    gulp.watch(paths.vendorScss, ['sass']);
     gulp.watch('app/js/**/*.scss', ['sass']);
+    gulp.watch('app/js/**/*.tmpl', browserSync.reload);
     gulp.watch('app/js/**/*.tmpl', browserSync.reload);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
@@ -69,9 +79,7 @@ gulp.task('watch', ['browser-sync', 'css-libs'], function () {
     gulp.task('build', ['clean', 'img', 'sass'], function() {
 
 	var buildCss = gulp.src([
-			'app/css/styles.css',
-			'app/css/libs.min.css'
-		//	'app/css/fonts.css'
+			'app/css/styles.css'
 		])
 		.pipe(gulp.dest('dist/css'));
 
