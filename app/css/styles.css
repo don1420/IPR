@@ -6342,10 +6342,10 @@ input[type=range]:focus::-ms-fill-upper {
     visibility: visible;
     -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
             animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
+    -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+    transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s, visibility 0s 1s;
+    transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
 
 .tap-target {
   position: absolute;
@@ -6389,10 +6389,10 @@ input[type=range]:focus::-ms-fill-upper {
     transition: transform .3s, -webkit-transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    transition: opacity .3s, transform .3s, visibility 0s;
-    transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+    -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+    transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -9585,6 +9585,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   overflow: visible;
   clip: auto; }
 
+.main-header {
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 600px) {
+    .main-header {
+      margin-bottom: 20px; } }
+  .main-header__menu {
+    background-color: #26a69a; }
+  .main-header__brand-logo-img {
+    height: 54px;
+    margin-top: 5px; }
+    @media only screen and (max-width: 600px) {
+      .main-header__brand-logo-img {
+        height: 40px;
+        margin-top: 9px; } }
+
 .top-toolbar__descr {
   display: inline-block; }
 
@@ -9592,6 +9607,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   display: inline-block;
   margin: 0 30px 0 15px;
   width: 50px; }
+  @media only screen and (max-width: 600px) {
+    .top-toolbar div.top-toolbar__limiter-page-size, .top-toolbar div.top-toolbar__sort-by {
+      margin: 0; } }
+  @media only screen and (max-width: 600px) {
+    .top-toolbar div.top-toolbar__limiter-page-size .select-dropdown, .top-toolbar div.top-toolbar__sort-by .select-dropdown {
+      padding-left: 5px; } }
 
 .top-toolbar__quantity-content {
   text-align: center; }
@@ -9600,10 +9621,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   text-align: right; }
 
 .top-toolbar div.top-toolbar__sort-by {
+  margin: 0 15px;
   width: 100px; }
+  @media only screen and (max-width: 600px) {
+    .top-toolbar div.top-toolbar__sort-by {
+      width: 70px; } }
 
 .filter-container__title {
+  margin-bottom: 46px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 600px) {
+    .filter-container__title {
+      margin-top: 0;
+      margin-bottom: 20px; } }
 
 .filter-container__section-title {
   background-color: #eee;
@@ -9644,5 +9674,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     text-align: center; }
   .product-container__btn {
     margin: 0 auto; }
+
+.bottom-toolbar__pagination {
+  padding: 15px 0; }
 
 /*# sourceMappingURL=styles.css.map */

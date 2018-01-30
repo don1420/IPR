@@ -1,0 +1,28 @@
+// ==========================================================================
+//Variables
+// ==========================================================================
+$vertical-indent-lg: 40px;
+$vertical-indent-sm: 20px;
+// ==========================================================================
+//Styles
+// ==========================================================================
+
+.main-header {
+  margin-bottom: $vertical-indent-lg;
+  @media #{$small-and-down} {
+    margin-bottom: $vertical-indent-sm;
+  }
+
+  &__menu {
+    background-color: $chip-selected-color;
+  }
+
+  &__brand-logo-img {
+    height: 54px;
+    margin-top: 5px;
+    @media #{$small-and-down} {
+      height: 40px;
+      margin-top: 9px;
+    }
+  }
+}

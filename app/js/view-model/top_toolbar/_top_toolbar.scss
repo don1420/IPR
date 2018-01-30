@@ -1,7 +1,7 @@
 // ==========================================================================
 //Variables
 // ==========================================================================
-
+$horizontal-indent-sm: 5px;
 // ==========================================================================
 //Styles
 // ==========================================================================
@@ -18,6 +18,15 @@
     display: inline-block;
     margin: 0 $indent-base * 2 0 $indent-base;
     width: 50px;
+    @media #{$small-and-down} {
+      margin: 0;
+    }
+
+    .select-dropdown {
+      @media #{$small-and-down} {
+        padding-left: $horizontal-indent-sm;
+      }
+    }
   }
 
   &__quantity-content {
@@ -30,6 +39,10 @@
 
   div.top-toolbar__sort-by {
     @extend div.top-toolbar__limiter-page-size;
+    margin: 0 $indent-base;
     width: 100px;
+    @media #{$small-and-down} {
+      width: 70px;
+    }
   }
 }

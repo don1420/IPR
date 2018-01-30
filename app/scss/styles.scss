@@ -1,4 +1,4 @@
-// Vendor Files
+// Vendor files
 @import "../libs/materialize-AMD-fix/sass/materialize";
 @import "../fonts/font-awesome-4.7.0/css/font-awesome";
 
@@ -6,6 +6,9 @@
 @import "mixins/flex";
 
 // Page blocks styles
+@import "../js/view-model/header/header";
 @import "../js/view-model/top_toolbar/top_toolbar";
 @import "../js/view-model/sidebar/sidebar";
 @import "../js/view-model/product_list/product_list";
+@import "../js/view-model/bottom_toolbar/bottom_toolbar";
+@import "../js/view-model/footer/footer";

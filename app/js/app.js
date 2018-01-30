@@ -1,13 +1,15 @@
 define(['jquery',
         'knockout',
+        'view-model/header/header',
         'view-model/product_list/product_list',
         'view-model/top_toolbar/top_toolbar',
         'view-model/bottom_toolbar/bottom_toolbar',
         'view-model/sidebar/sidebar',
+        'view-model/footer/footer',
         'core/read_set_data',
         'text!view/layout.tmpl'],
 
-        function($, ko, ProductListViewModel, TopToolbarViewModel, BottomToolbarViewModel, SidebarViewModel, ReadSetData, layoutTmpl) {
+        function($, ko, HeaderViewModel, ProductListViewModel, TopToolbarViewModel, BottomToolbarViewModel, SidebarViewModel, FooterViewModel, ReadSetData, layoutTmpl) {
 
             var MainViewModel = function(options) {
 
@@ -21,6 +23,22 @@ define(['jquery',
                 //  Applying main template
                 //  ---------------------------------------------
                 self.element.html(layoutTmpl);
+
+                //  ---------------------------------------------
+                //  Create HeaderViewModel
+                //  ---------------------------------------------
+                var headerEl = self.element.find('#main_header');               //keep a reference to the main_header block
+                self.productList = new HeaderViewModel({
+                    element: headerEl
+                });
+
+                //  ---------------------------------------------
+                //  Create FooterViewModel
+                //  ---------------------------------------------
+                var footerEl = self.element.find('#main_footer');               //keep a reference to the main_footer block
+                self.productList = new FooterViewModel({
+                    element: footerEl
+                });
 
                 //  ---------------------------------------------
                 //  Create ProductListViewModel
@@ -49,7 +67,7 @@ define(['jquery',
                 //  ---------------------------------------------
                 //  Create BottomToolbarViewModel
                 //  ---------------------------------------------
-                var sidebarEl = self.element.find('#sidebar_filter');     //keep a reference to the bottom_toolbar block
+                var sidebarEl = self.element.find('#sidebar_filter');           //keep a reference to the sidebar_filter block
                 self.sidebar = new SidebarViewModel({
                     sidebarEl: sidebarEl
                 });
