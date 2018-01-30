@@ -1,9 +1,10 @@
-<ul class="bottom-toolbar__pagination item-container pagination">
-    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() == 0}">
+<ul class="bottom-toolbar__pagination item-container pagination browser-default">
+    <li class="waves-effect waves-red hide-on-small-only" data-bind="css: {'disabled': bottomToolbar.pageIndex() == 0}">
         <a href="#" data-bind="click: bottomToolbar.moveFirstPage, enable: bottomToolbar.pageIndex() > 0">First</a>
     </li>
     <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() <= 0}">
-        <a href="#" data-bind="click: bottomToolbar.movePreviousPage">Previous</a>
+        <a class="hide-on-small-only" href="#" data-bind="click: bottomToolbar.movePreviousPage">Previous</a>
+        <a class="hide-on-med-and-up" href="#" data-bind="click: bottomToolbar.movePreviousPage"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
     </li>
 
     <!-- ko foreach: new Array(bottomToolbar.maxPageIndex() + 1) -->
@@ -14,9 +15,10 @@
     <!-- /ko -->
 
     <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() >= bottomToolbar.maxPageIndex()}">
-        <a href="#" data-bind="click: bottomToolbar.moveNextPage">Next</a>
+        <a class="hide-on-small-only" href="#" data-bind="click: bottomToolbar.moveNextPage">Next</a>
+        <a class="hide-on-med-and-up" href="#" data-bind="click: bottomToolbar.moveNextPage"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
     </li>
-    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() == bottomToolbar.maxPageIndex()}">
+    <li class="waves-effect waves-red hide-on-small-only" data-bind="css: {'disabled': bottomToolbar.pageIndex() == bottomToolbar.maxPageIndex()}">
         <a href="#"
            data-bind="click: bottomToolbar.moveLastPage, enable: bottomToolbar.pageIndex() < bottomToolbar.maxPageIndex()">Last</a>
     </li>

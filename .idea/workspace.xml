@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="343bdd7d-5249-4bf1-8bf8-1d568d1d2fb4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/view-model/footer/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/view-model/footer/footer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/styles.css" afterPath="$PROJECT_DIR$/app/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/styles.css.map" afterPath="$PROJECT_DIR$/app/css/styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/view-model/bottom_toolbar/_bottom_toolbar.scss" afterPath="$PROJECT_DIR$/app/js/view-model/bottom_toolbar/_bottom_toolbar.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl" afterPath="$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/view-model/sidebar/sidebar.scss" afterPath="$PROJECT_DIR$/app/js/view-model/sidebar/sidebar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/view-model/top_toolbar/_top_toolbar.scss" afterPath="$PROJECT_DIR$/app/js/view-model/top_toolbar/_top_toolbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/view-model/top_toolbar/top_toolbar.tmpl" afterPath="$PROJECT_DIR$/app/js/view-model/top_toolbar/top_toolbar.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/view/layout.tmpl" afterPath="$PROJECT_DIR$/app/js/view/layout.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/styles.scss" afterPath="$PROJECT_DIR$/app/scss/styles.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/app/js/view-model/sidebar/sidebar.tmpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -67,18 +60,8 @@
       <file leaf-file-name="top_toolbar.tmpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/view-model/top_toolbar/top_toolbar.tmpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/view-model/header/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="77" />
+            <state relative-caret-position="144">
+              <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -94,31 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_top_toolbar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/view-model/top_toolbar/_top_toolbar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bottom_toolbar.tmpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_bottom_toolbar.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_bottom_toolbar.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/view-model/bottom_toolbar/_bottom_toolbar.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bottom_toolbar.tmpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -128,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fontawesome-webfont</find>
       <find>fa-version</find>
       <find>roboto</find>
       <find>va</find>
@@ -158,13 +130,14 @@
       <find>media</find>
       <find>#26a69a</find>
       <find>pad</find>
+      <find>material-icons</find>
     </findStrings>
     <dirStrings>
-      <dir>C:\Users\User\Desktop\Files\IPR\IPR\app\libs\materialize-AMD-fix</dir>
       <dir>C:\Users\User\Desktop\Files\IPR\IPR\app\fonts</dir>
       <dir>C:\Users\User\Desktop\Files\IPR\IPR\app\fonts\font-awesome-4.7.0\scss</dir>
       <dir>C:\Users\User\Desktop\Files\IPR\IPR\app</dir>
       <dir>C:\Users\User\Desktop\Files\IPR\IPR\app\libs\materialize-AMD-fix\sass</dir>
+      <dir>C:\Users\User\Desktop\Files\IPR\IPR\app\libs\materialize-AMD-fix</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -211,8 +184,8 @@
         <option value="$PROJECT_DIR$/app/scss/styles.scss" />
         <option value="$PROJECT_DIR$/app/js/view-model/top_toolbar/_top_toolbar.scss" />
         <option value="$PROJECT_DIR$/app/js/view/layout.tmpl" />
-        <option value="$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl" />
         <option value="$PROJECT_DIR$/app/js/view-model/bottom_toolbar/_bottom_toolbar.scss" />
+        <option value="$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl" />
       </list>
     </option>
   </component>
@@ -270,7 +243,7 @@
               <item name="IPR" type="b2602c69:ProjectViewProjectNode" />
               <item name="IPR" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -320,23 +293,22 @@
       <workItem from="1516868910886" duration="6977000" />
       <workItem from="1516960059179" duration="20272000" />
       <workItem from="1517211646061" duration="24265000" />
-      <workItem from="1517298053065" duration="11866000" />
+      <workItem from="1517298053065" duration="15462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63380000" />
+    <option name="totallyTimeSpent" value="66976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -584,15 +556,7 @@
     <entry file="file://$PROJECT_DIR$/app/js/view-model/sidebar/sidebar.tmpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/view-model/header/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="77" />
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -601,22 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/view-model/top_toolbar/top_toolbar.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/view/layout.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -637,10 +585,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl">
+    <entry file="file://$PROJECT_DIR$/app/js/view/layout.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/view-model/header/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/view-model/top_toolbar/top_toolbar.tmpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -648,7 +612,15 @@
     <entry file="file://$PROJECT_DIR$/app/js/view-model/bottom_toolbar/_bottom_toolbar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/view-model/bottom_toolbar/bottom_toolbar.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding />
         </state>
       </provider>
