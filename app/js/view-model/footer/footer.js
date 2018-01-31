@@ -16,6 +16,10 @@ define(['jquery',
             //  Applying template
             //  ---------------------------------------------
             self.element.html(footerTmpl);
+
+            $(function(){
+                $('.carousel').carousel({fullWidth: true});
+            });
         };
  
         return FooterViewModel;
