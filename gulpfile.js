@@ -47,12 +47,25 @@ gulp.task('sass', function () {
 // 	.pipe(gulp.dest('app/css/'));
 // });
 
+//close the opened browsers once browser-sync exits
+browserSync.use({
+    plugin: function() {},
+    hooks: {
+        'client:js': '(function (bs) {bs.socket.on("disconnect", function (client) {' +
+		' window.close(); ' +
+		'});})(___browserSync___);'
+    }
+});
+
+browserSync.create();
+
 gulp.task('browser-sync', function () {
 	browserSync({
 		server: {
 			baseDir: 'app'
 		},
-		notify: false
+		notify: false,
+        browser: "chrome"
 	});
 });
 
