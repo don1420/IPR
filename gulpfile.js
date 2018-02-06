@@ -8,13 +8,59 @@ var gulp = require('gulp'),
   del = require('del'),
   cache = require('gulp-cache'),
   autoprefixer = require('gulp-autoprefixer'),
-  sourcemaps = require('gulp-sourcemaps');
+  sourcemaps = require('gulp-sourcemaps'),
+  rjs = require('gulp-requirejs');
 
 var paths = {
   scss: ['app/scss/**/*.scss'],
   vendorScss: ['app/libs/materialize-AMD-fix/sass/**/*.scss'],
   css: 'app/css',
+  build: {
+        root: 'build/',
+        js: 'build/js/',
+        rjs: '../../build/js/build.js',
+        css: 'build/css/',
+        img: 'build/img/'
+  },
+  src: {
+        root: 'app/',
+        html: 'app/**/*.html',
+        js: 'app/js/**/*.js',
+        rjs: 'app/js/',
+        img: 'app/img/**/*.*',
+        requirejsLib: 'app/libs/require.js',
+        libs: '../libs/'
+  }
 };
+
+//Build requirejs
+gulp.task('requirejs:build', function() {
+    rjs({
+        baseUrl: paths.src.rjs,
+        name: 'init',
+        out: paths.build.rjs,
+        paths: {
+            jquery: paths.src.libs + 'jquery',
+            text: paths.src.libs + 'text',
+            underscore: paths.src.libs + 'underscore',
+            knockout: paths.src.libs + 'knockout',
+            materialize: paths.src.libs + 'materialize-AMD-fix/dist/js/materialize',
+        },
+        shim: {
+            jquery: {
+                exports: '$',
+            },
+            underscore: {
+                exports: '_',
+            },
+            materialize: {
+                deps: ['jquery'],
+            }
+        }
+    })
+        .pipe(uglify())
+        .pipe(gulp.dest(paths.build.js));
+});
 
 gulp.task('sass', function() {
   return gulp
