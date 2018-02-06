@@ -1,4 +1,3 @@
-
 /*define(function (require) {
     // Load jQuery v3.2.1
     var jQuery = require('/jquery/dist/jquery.min');
@@ -8,48 +7,52 @@
 });*/
 
 require.config({
-        paths: {
-            'text': '../libs/text',
-            'jquery': '../libs/jquery/dist/jquery.min',
-            'underscore': '../libs/underscore',
-            'knockout': '../libs/knockout',
-            'materialize': '../libs/materialize-AMD-fix/dist/js/materialize'
-        },
-        shim: {
-            'jquery': {
-                exports: '$'
-            },
-            'underscore': {
-                exports: '_'
-            },
-            'materialize': {
-                'deps': ['jquery']
-            }
-        }
+  paths: {
+    text: '../libs/text',
+    jquery: '../libs/jquery/dist/jquery.min',
+    underscore: '../libs/underscore',
+    knockout: '../libs/knockout',
+    materialize: '../libs/materialize-AMD-fix/dist/js/materialize',
+  },
+  shim: {
+    jquery: {
+      exports: '$',
+    },
+    underscore: {
+      exports: '_',
+    },
+    materialize: {
+      deps: ['jquery'],
+    },
+  },
 });
 
-require(['jquery', 'knockout', 'materialize', 'app'],
+require(['jquery', 'knockout', 'materialize', 'app'], function(
+  $,
+  ko,
+  Materialize,
+  MainViewModel
+) {
+  var mainContent = $('#main-content'); //keep a reference to the root element
 
-    function ($, ko, Materialize, MainViewModel) {
+  //ko.components.registry() регистрация компонентов
+  //сss материалайз гугл
+  //хедер - лого, телефон
+  //футер копирайт, емаил
+  //продукт лист - добавить баттон
 
-        var mainContent = $('#main-content');      //keep a reference to the root element
+  //  ---------------------------------------------
+  //  Show waves effect from materialize
+  //  ---------------------------------------------
+  Waves.displayEffect();
 
-        //ko.components.registry() регистрация компонентов
-        //сss материалайз гугл
-        //хедер - лого, телефон
-        //футер копирайт, емаил
-        //продукт лист - добавить баттон
-
-        //  ---------------------------------------------
-        //  Show waves effect from materialize
-        //  ---------------------------------------------
-        Waves.displayEffect();
-
-        //  ---------------------------------------------
-        //  Applying bind of the MainViewModel
-        //  ---------------------------------------------
-        ko.applyBindings(new MainViewModel({
-            element: mainContent
-        }), mainContent[0]);
-
-    });
+  //  ---------------------------------------------
+  //  Applying bind of the MainViewModel
+  //  ---------------------------------------------
+  ko.applyBindings(
+    new MainViewModel({
+      element: mainContent,
+    }),
+    mainContent[0]
+  );
+});
