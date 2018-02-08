@@ -6,30 +6,42 @@ $facebook-link-bg-color: #3b5998;
 // ==========================================================================
 //Styles
 // ==========================================================================
-.social-icons-footer .fa-twitter:before,
-.social-icons-footer .fa-facebook:before,
-.social-icons-footer .fa-youtube:before {
-  background: #9e9e9e;
-  border-radius: 50%;
-  color: #fff;
-  display: inline-block;
-  font-size: 1.5rem;
-  height: 35px;
-  margin: 0;
-  padding: 18% 0;
-  text-align: center;
-  width: 35px;
+
+.main-footer {
+  .social-icons-footer .fa-twitter:before,
+  .social-icons-footer .fa-facebook:before,
+  .social-icons-footer .fa-youtube:before {
+    background: #9e9e9e;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 35px;
+    margin: 0;
+    padding: 18% 0;
+    text-align: center;
+    width: 35px;
+  }
+
+  .social-icons-footer {
+    .fa-facebook:hover:before {
+      background: $facebook-link-bg-color;
+    }
+
+    .fa-youtube:hover:before {
+      background: $youtube-link-bg-color;
+    }
+
+    .fa-twitter:hover:before {
+      background: $blue-color1;
+    }
+  }
+
+  .carousel {
+    &.initialized {
+      max-height: 200px !important;
+    }
+  }
 }
 
-.social-icons-footer .fa-facebook:hover:before {
-  background: $facebook-link-bg-color;
-}
-
-.social-icons-footer .fa-youtube:hover:before {
-  background: $youtube-link-bg-color;
-}
-
-.social-icons-footer .fa-twitter:hover:before {
-  background: $blue-color1;
-}
 

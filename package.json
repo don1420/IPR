@@ -1,12 +1,12 @@
 {
-  "name": "IPR",
+  "name": "IPR 1",
   "version": "1.0.0",
-  "description": "IPR 1",
+  "description": "IPR Knockout SPA project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dmytro",
+  "author": "Dmytro Onyshchenko",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.14.0",
@@ -14,8 +14,8 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cache": "^1.0.2",
-    "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-requirejs": "^1.1.1",
     "gulp-sass": "^3.1.0",
