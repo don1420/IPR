@@ -1,33 +1,43 @@
 <ul class="bottom-toolbar__pagination item-container pagination browser-default">
-    <li class="waves-effect waves-red hide-on-small-only" data-bind="css: {'disabled': bottomToolbar.pageIndex() == 0}">
-        <a href="#" data-bind="click: bottomToolbar.moveFirstPage, enable: bottomToolbar.pageIndex() > 0">First</a>
+    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() == 0}">
+        <a href="#" data-bind="click: bottomToolbar.moveFirstPage, enable: bottomToolbar.pageIndex() > 0">
+            <span class="hide-on-small-only">First</span>
+            <span class="hide-on-med-and-up">
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            </span>
+        </a>
     </li>
     <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() <= 0}">
         <a href="#" data-bind="click: bottomToolbar.movePreviousPage">
             <span class="hide-on-small-only">Previous</span>
             <span class="hide-on-med-and-up">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
             </span>
         </a>
     </li>
 
-    <!-- ko foreach: new Array(bottomToolbar.maxPageIndex() + 1) -->
-    <li data-bind="css: {'active': $index() == $root.bottomToolbar.pageIndex()}">
-        <a href="#"
-           data-bind="text:$index() + 1, click:$root.bottomToolbar.moveSelectedPage.bind($data, $index()), attr: { 'href': '#page=' + ($index() + 1)}">0</a>
+    <!-- ko foreach:bottomToolbar.pagers -->
+    <li data-bind="css: {'active': $data == $root.bottomToolbar.pageIndex()}">
+        <!--<a data-bind="text: $data, attr: { 'href': '#page=' + ($index() + 1)}, click: $root.bottomToolbar.pagerClick"></a>-->
+        <a data-bind="text: $data + 1, click:$root.bottomToolbar.moveSelectedPage.bind($data), attr: { 'href': '#page=' + ($data)}"></a>
     </li>
-    <!-- /ko -->
+    <!--/ko-->
 
     <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() >= bottomToolbar.maxPageIndex()}">
         <a href="#" data-bind="click: bottomToolbar.moveNextPage">
             <span class="hide-on-small-only">Next</span>
             <span class="hide-on-med-and-up">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </span>
         </a>
     </li>
-    <li class="waves-effect waves-red hide-on-small-only" data-bind="css: {'disabled': bottomToolbar.pageIndex() == bottomToolbar.maxPageIndex()}">
+    <li class="waves-effect waves-red" data-bind="css: {'disabled': bottomToolbar.pageIndex() == bottomToolbar.maxPageIndex()}">
         <a href="#"
-           data-bind="click: bottomToolbar.moveLastPage, enable: bottomToolbar.pageIndex() < bottomToolbar.maxPageIndex()">Last</a>
+           data-bind="click: bottomToolbar.moveLastPage, enable: bottomToolbar.pageIndex() < bottomToolbar.maxPageIndex()">
+            <span class="hide-on-small-only">Last</span>
+            <span class="hide-on-med-and-up">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            </span>
+        </a>
     </li>
 </ul>

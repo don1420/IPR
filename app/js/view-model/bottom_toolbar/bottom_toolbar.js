@@ -72,6 +72,32 @@ define(
       self.moveLastPage = function() {
         ReadSetData.pageIndex(self.maxPageIndex());
       };
+      console.log(self.maxPageIndex());
+
+      //  ---------------------------------------------
+      //  MOve to the last page
+      //  ---------------------------------------------
+      self.pagers = ko.computed(function() {
+        var median = parseInt(self.currentPageSize() / 2),
+          start = 0,
+          end = self.maxPageIndex(),
+          sequence = [];
+
+        if (self.maxPageIndex() > self.currentPageSize()) {
+          if (self.pageIndex() <= median) {
+            end = self.currentPageSize();
+          } else if (self.pageIndex() >= self.maxPageIndex() - median) {
+            start = self.maxPageIndex() - self.currentPageSize() + 1;
+          } else {
+            start = self.pageIndex() - median;
+            end = self.pageIndex() + median;
+          }
+        }
+        for (var i = start; i <= end; i++) {
+          sequence.push(i);
+        }
+        return sequence;
+      });
     };
 
     return BottomToolbarViewModel;
