@@ -72,7 +72,6 @@ define(
       self.moveLastPage = function() {
         ReadSetData.pageIndex(self.maxPageIndex());
       };
-      console.log(self.maxPageIndex());
 
       //  ---------------------------------------------
       //  MOve to the last page

@@ -25,6 +25,7 @@
   &__img-wrap {
     height: 295px;
     overflow: hidden;
+    position: relative;
   }
 
   &__img {
@@ -44,4 +45,14 @@
   &__btn {
     margin: 0 auto;
   }
+}
+
+.preloader-wrapper {
+  left: calc(50% - 18px);
+  position: absolute;
+  top: calc(50% - 18px);
+}
+
+.hide-block {
+  display: none;
 }

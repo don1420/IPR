@@ -27,6 +27,11 @@ define(
           start = this.pageIndex() * size;
         return this.records.slice(start, start + size);
       }, ReadSetData);
+
+        window.onload = function () {
+            $('.preloader-wrapper').addClass('hide-block');
+            $('.product-container__img').removeClass('hide-block');
+        };
     };
 
     return ProductListViewModel;
